@@ -16,6 +16,8 @@
 		FF3F849C2C9283BA00C62249 /* Country_InfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3F849B2C9283BA00C62249 /* Country_InfoTests.swift */; };
 		FF3F84A62C9283BA00C62249 /* Country_InfoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3F84A52C9283BA00C62249 /* Country_InfoUITests.swift */; };
 		FF3F84A82C9283BA00C62249 /* Country_InfoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3F84A72C9283BA00C62249 /* Country_InfoUITestsLaunchTests.swift */; };
+		FF3F84B62C9286E700C62249 /* CountryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3F84B52C9286E700C62249 /* CountryAPI.swift */; };
+		FF3F84B82C9286F300C62249 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3F84B72C9286F300C62249 /* Country.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		FF3F84A12C9283BA00C62249 /* Country-InfoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Country-InfoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF3F84A52C9283BA00C62249 /* Country_InfoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country_InfoUITests.swift; sourceTree = "<group>"; };
 		FF3F84A72C9283BA00C62249 /* Country_InfoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country_InfoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FF3F84B52C9286E700C62249 /* CountryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryAPI.swift; sourceTree = "<group>"; };
+		FF3F84B72C9286F300C62249 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +103,9 @@
 		FF3F84832C9283B900C62249 /* Country-Info */ = {
 			isa = PBXGroup;
 			children = (
-				FF3F84842C9283B900C62249 /* AppDelegate.swift */,
-				FF3F84862C9283B900C62249 /* SceneDelegate.swift */,
-				FF3F84882C9283B900C62249 /* ViewController.swift */,
-				FF3F848A2C9283B900C62249 /* Main.storyboard */,
-				FF3F848D2C9283BA00C62249 /* Assets.xcassets */,
-				FF3F848F2C9283BA00C62249 /* LaunchScreen.storyboard */,
+				FF3F84B42C9286D200C62249 /* Model */,
+				FF3F84BA2C92872200C62249 /* View */,
+				FF3F84B92C92871600C62249 /* Controller */,
 				FF3F84922C9283BA00C62249 /* Info.plist */,
 			);
 			path = "Country-Info";
@@ -125,6 +126,35 @@
 				FF3F84A72C9283BA00C62249 /* Country_InfoUITestsLaunchTests.swift */,
 			);
 			path = "Country-InfoUITests";
+			sourceTree = "<group>";
+		};
+		FF3F84B42C9286D200C62249 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF3F84B52C9286E700C62249 /* CountryAPI.swift */,
+				FF3F84B72C9286F300C62249 /* Country.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF3F84B92C92871600C62249 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FF3F84842C9283B900C62249 /* AppDelegate.swift */,
+				FF3F84862C9283B900C62249 /* SceneDelegate.swift */,
+				FF3F84882C9283B900C62249 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FF3F84BA2C92872200C62249 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF3F848A2C9283B900C62249 /* Main.storyboard */,
+				FF3F848D2C9283BA00C62249 /* Assets.xcassets */,
+				FF3F848F2C9283BA00C62249 /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +289,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF3F84892C9283B900C62249 /* ViewController.swift in Sources */,
+				FF3F84B62C9286E700C62249 /* CountryAPI.swift in Sources */,
 				FF3F84852C9283B900C62249 /* AppDelegate.swift in Sources */,
+				FF3F84B82C9286F300C62249 /* Country.swift in Sources */,
 				FF3F84872C9283B900C62249 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
